@@ -53,7 +53,7 @@ def fx_JiFen_yi2(xmi, mu, sigma2):
     return float(resultUp_yi2) / resultDown_yi2
 
 
-# Calculate information dig value yi when li == 1，calculate integral function named ti1, Pack the function
+# Calculate information dig value ti when li == 1，calculate integral function named ti1, Pack the function
 def fx_JiFen_ti1(xmi, mu, sigma2):
     x_ti1 = sp.Symbol('x_ti1')
     fx_QiuJiFen_ti1 = (x_ti1 ** 2) * (
@@ -63,7 +63,7 @@ def fx_JiFen_ti1(xmi, mu, sigma2):
     return float(resultUp_ti1) / resultDown_ti1
 
 
-# Calculate information dig value yi when li == 0，calculate integral function named ti2, Pack the function
+# Calculate information dig value ti when li == 0，calculate integral function named ti2, Pack the function
 def fx_JiFen_ti2(xmi, mu, sigma2):
     x_ti2 = sp.Symbol('x_ti2')
     fx_QiuJiFen_ti2 = (x_ti2 ** 2) * (
