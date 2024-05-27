@@ -91,7 +91,7 @@ if __name__ == '__main__':
     Infor_ti = pd.Series(np.zeros(n, float))
     # Print inputed data 打印出导入的数据
     print(workbook)
-    # Spesify normal distribution parameter, standard error = Sigma and average value = Mu指定正态分布参数，标准差为Sigma，均值为Mu
+    # Specify normal distribution parameter, standard error = Sigma and average value = Mu指定正态分布参数，标准差为Sigma，均值为Mu
     Mu_old = 0
     Sigma2_old = 0
     count = 0
