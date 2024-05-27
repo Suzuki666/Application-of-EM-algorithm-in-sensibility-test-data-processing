@@ -1,10 +1,10 @@
-# 迭代画图
+# Iteration Plotting
 # 2023/04/21
 import pandas as pd
 import matplotlib.pyplot as plt
 
 if __name__ == '__main__':
-    # 导入感度试验结果
+    # Input sensitivity test result
     workbook = pd.read_excel('迭代画图.xlsx')
     Count = workbook["i"]
     Mu = workbook["mu"]
