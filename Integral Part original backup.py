@@ -5,7 +5,7 @@ import math
 import copy
 import pandas as pd
 import matplotlib.pyplot as plt
-# 计算信息挖掘值yi when li == 1，求积分函数代号为yi1
+# Calculate information dig value yi when li == 1, solve integral function named yi1 计算信息挖掘值yi when li == 1，求积分函数代号为yi1
 x_yi1 = sp.Symbol('x_yi1')
 mu = 1.0168
 sigma2 = 0.0001942
@@ -15,7 +15,7 @@ resultDown_yi1 = normal_distribution((1.020 - mu) / sp.sqrt(sigma2))
 print(float(resultUp_yi1) / resultDown_yi1)
 
 
-# 计算信息挖掘值yi when li == 0，求积分函数代号为yi2
+# Calculate information dig value yi when li == 0, solve integral function named yi2 计算信息挖掘值yi when li == 0，求积分函数代号为yi2
 x_yi2 = sp.Symbol('x_yi2')
 mu = 1.0168
 sigma2 = 0.0001942
@@ -24,7 +24,7 @@ resultUp_yi2 = sp.integrate(fx_QiuJiFen_yi2, (x_yi2, 1.020, float("inf")))
 resultDown_yi2 = 1 - normal_distribution((1.020 - mu) / sp.sqrt(sigma2))
 print(float(resultUp_yi2) / resultDown_yi2)
 
-# 计算信息挖掘值ti when li == 1，求积分函数代号为ti1
+# Calculate information dig value yi when li == 1, solve integral function named ti1 计算信息挖掘值ti when li == 1，求积分函数代号为ti1
 x_ti1 = sp.Symbol('x_ti1')
 mu = 1.0168
 sigma2 = 0.0001942
@@ -33,7 +33,7 @@ resultUp_ti1 = sp.integrate(fx_QiuJiFen_ti1, (x_ti1, 1.020, float("inf")))
 resultDown_ti1 = normal_distribution((1.020 - mu) / sp.sqrt(sigma2))
 print(float(resultUp_ti1) / resultDown_ti1)
 
-# 计算信息挖掘值ti when li == 0，求积分函数代号为ti2
+# Calculate information dig value yi when li == 0, solve integral function named ti2 计算信息挖掘值ti when li == 0，求积分函数代号为ti2
 x_ti2 = sp.Symbol('x_ti2')
 mu = 1.0168
 sigma2 = 0.0001942
